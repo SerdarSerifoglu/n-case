@@ -1,6 +1,6 @@
-.test {
-  background-color: red;
+* {
 }
-.uu {
-  border: 1px solid red;
-}
+
+@import "./variables.scss";
+@import "./film-card.scss";
+@import "./search.scss";

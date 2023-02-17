@@ -8,9 +8,17 @@
     <link rel="stylesheet" href="./public/index.min.css"
   </head>
   <body>
-    <div class="test">HAHAHAHAH</div>
+    <div class="test"></div>
+    <main class="main">
+      <input
+        id="input-search"
+        class="input-search"
+        type="text"
+        placeholder="Bulmak istediğiniz filmin adını yazınız"
+      />
+    </main>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-
+    <script src="./src/scripts/search.js" type="module"></script>
     <script>
       $(document).ready(function () {
         console.log("ready!");
