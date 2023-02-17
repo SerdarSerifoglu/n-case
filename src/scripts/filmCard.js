@@ -2,6 +2,7 @@ class FilmCard {
   constructor(e) {
     console.log("e", e);
     this.title = e.Title;
+    this.imgUrl = e.Poster;
   }
 
   name(params) {
@@ -11,7 +12,7 @@ class FilmCard {
   render() {
     return `<div class="film-card">
      <div class="film-card__image">
-       IMG
+       <img width="100" src="${this.imgUrl}"/>
      </div>
      <div class="film-card__info">
        <div class="film-card__title">

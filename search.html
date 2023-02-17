@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./public/index.min.css"
   </head>
   <body>
-    <div class="test"></div>
     <main class="main">
       <input
         id="input-search"
@@ -16,12 +15,14 @@
         type="text"
         placeholder="Bulmak istediğiniz filmin adını yazınız"
       />
+      <div class="film-list"></div>
+      <div class="more-film-button">DAHA FAZLA SONUÇ</div>
     </main>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./src/scripts/search.js" type="module"></script>
     <script>
       $(document).ready(function () {
-        console.log("ready!");
+        $(".more-film-button").hide();
       });
     </script>
   </body>

@@ -1,7 +1,6 @@
 .film-card {
   width: 360px;
   height: min-content;
-  background-color: aqua;
   display: grid;
 
   grid-template-columns: 30% 70%;
@@ -17,7 +16,6 @@
   }
 
   &__image {
-    background-color: red;
     width: 100px;
     height: 200px;
     grid-area: image;
