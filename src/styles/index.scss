@@ -4,6 +4,13 @@
   padding: 0;
 }
 
+.underline-link {
+  text-decoration: underline;
+}
+.underline-link::after {
+  content: " >>";
+}
+
 @import "./variables.scss";
 @import "./film-card.scss";
 @import "./search.scss";

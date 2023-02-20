@@ -9,7 +9,7 @@
   background-color: $bc-color;
   display: grid;
   place-content: center;
-  padding: 20px 0;
+  padding: 20px 10px;
 
   .input-search {
     width: 70vw;
@@ -17,6 +17,10 @@
     border-radius: 8px;
     font-size: 18px;
     padding: 15px;
+
+    @media (max-width: 1080px) {
+      width: 90vw;
+    }
   }
 
   .film-list {
@@ -27,6 +31,9 @@
     justify-content: space-between;
     gap: 20px;
     margin-top: 20px;
+    @media (max-width: 1080px) {
+      width: 90vw;
+    }
   }
 
   .more-film-button {
@@ -36,5 +43,9 @@
     height: 50px;
     border-top: 2px solid $border-color;
     margin-top: 20px;
+
+    @media (max-width: 1080px) {
+      width: 90vw;
+    }
   }
 }

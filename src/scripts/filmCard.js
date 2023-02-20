@@ -1,12 +1,7 @@
 class FilmCard {
   constructor(e) {
-    console.log("e", e);
     this.title = e.Title;
     this.imgUrl = e.Poster;
-  }
-
-  name(params) {
-    console.log("name_run_in FİlmCard");
   }
 
   render() {
@@ -19,31 +14,28 @@ class FilmCard {
          ${this.title}
        </div>
        <div class="film-card__score">
-         6.8/10
+         <span class="film-card__score-emphasis">6.8</span>/10
        </div>
        <br />
        <div class="film-card__language"><span class="film-card__subtitle">Dil:
          </span>
          İngilizce
        </div>
-       <div class="film-card__language"><span class="film-card__subtitle">Oyuncular:
+       <div class="film-card__actors"><span class="film-card__subtitle">Oyuncular:
          </span>
          Jeff Bridges, Garrett Hedlund,
-         Olivia Wilde | Tüm listeyi gör »
+         Olivia Wilde | <span class="underline-link">Tüm listeyi gör</span>
        </div>
        <br />
        <div class="film-card__description">
          Lorem ipsum dolor sit amet, consectetuer
          adipiscing elit, sed diam nonummy nibh
          euismod tincidunt ut laoreet dolore magna
-         aliquam erat Detaylar
+         aliquam erat <span class="underline-link">Detaylar</span>
        </div>
      </div>
    </div>`;
   }
 }
-FilmCard.prototype.serdar = function () {
-  console.log("protoSerdar_FilmCard");
-};
 
 export default FilmCard;

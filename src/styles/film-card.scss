@@ -1,14 +1,20 @@
 .film-card {
-  width: 360px;
+  width: 90vw;
+  max-width: 45%;
   height: min-content;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
   display: grid;
 
   grid-template-columns: 30% 70%;
   grid-template-rows: auto;
   grid-template-areas: "image info";
+  gap: 20px;
 
-  @media (max-width: 768px) {
-    grid-template-columns: 360px;
+  @media (max-width: 815px) {
+    max-width: 90vw;
+    grid-template-columns: 90vw;
     grid-template-rows: 200px 1fr;
     grid-template-areas:
       "image"
@@ -19,17 +25,35 @@
     width: 100px;
     height: 200px;
     grid-area: image;
-    @media (max-width: 768px) {
+
+    @media (max-width: 815px) {
       display: grid;
       place-content: center;
-      width: 360px;
+      width: 87vw;
       height: 200px;
     }
   }
 
   &__info {
     width: 100%;
+    max-width: 87vw;
     height: 100%;
     grid-area: info;
+    font-size: 12px;
+
+    @media (max-width: 815px) {
+      max-width: 87vw;
+      display: grid;
+      place-content: center;
+    }
+  }
+  &__score {
+    &-emphasis {
+      font-size: 18px;
+      color: blue;
+    }
+  }
+  &__title {
+    font-size: 14px;
   }
 }
