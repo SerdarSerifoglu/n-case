@@ -13,6 +13,7 @@ function getCards(search, limit) {
     success: function (data) {
       console.log(data.Search);
       responseData = data.Search;
+      $(".film-card").remove();
       responseData
         .filter((e, i) => (limit ? i < limit : e))
         .forEach((e) => {
