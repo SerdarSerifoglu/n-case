@@ -1,4 +1,6 @@
 import FilmCard from "./filmCard.js";
+import { globalState, setGlobalState } from "./globalState.js";
+import { renderList } from "./list.js";
 
 var responseData = [];
 function getCards(search, limit) {
@@ -11,8 +13,10 @@ function getCards(search, limit) {
       page: 1,
     },
     success: function (data) {
-      console.log(data.Search);
+      console.log("data", data);
       responseData = data.Search;
+      setGlobalState("filmList", data.Search);
+      setGlobalState("totalResultCount", data.totalResults);
       $(".film-card").remove();
       responseData
         .filter((e, i) => (limit ? i < limit : e))
@@ -32,14 +36,22 @@ function getCards(search, limit) {
   $("#input-search").change(function () {
     if (this.value.length > 2) {
       getCards(this.value, 2);
+      setGlobalState("searchText", this.value);
+      console.log("searchText", globalState.searchText);
     }
   });
   $(".more-film-button").click(function () {
     console.log("click serdar");
-    $(".film-card").remove();
+    // $(".film-card").remove();
 
-    responseData.forEach((e) => {
-      var filmCard = new FilmCard(e);
+    console.log("Tıklandı");
+    window.location.hash = "serdar";
+    $(".main").remove();
+    $("body").add("main").addClass("main");
+    renderList();
+
+    globalState.filmList.forEach((e, i) => {
+      var filmCard = new FilmCard(e, false);
       $(".film-list").append(filmCard.render());
     });
   });
