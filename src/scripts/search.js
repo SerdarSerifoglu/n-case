@@ -39,7 +39,7 @@ function getCards(search, limit) {
     }
   });
   $(".more-film-button").click(function () {
-    window.location.hash = "serdar";
+    window.location.hash = "list";
     $(".main").remove();
     $("body").add("main").addClass("main");
     renderList();
