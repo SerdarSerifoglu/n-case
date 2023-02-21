@@ -9,16 +9,26 @@
   </head>
   <body>
     <main class="main">
-      <input
-        id="input-search"
-        class="input-search"
-        type="text"
-        placeholder="Bulmak istediğiniz filmin adını yazınız"
-      />
+      <div class="search">
+        <span class="fa fa-search"></span>
+        <input
+          id="input-search"
+          class="input-search"
+          type="text"
+          placeholder="Bulmak istediğiniz filmin adını yazınız"
+        />
+      </div>
       <div class="film-list"></div>
       <div class="more-film-button">DAHA FAZLA SONUÇ</div>
     </main>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="/dist/js/search.js" type="module"></script>
 
     <script>

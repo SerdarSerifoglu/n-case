@@ -8,7 +8,7 @@
   border-radius: 8px;
   display: grid;
 
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 25% 60%;
   grid-template-rows: auto;
   grid-template-areas: "image info";
   gap: 20px;
@@ -30,10 +30,10 @@
     width: 100px;
     height: 200px;
     grid-area: image;
+    display: grid;
+    place-content: center;
 
     @media (max-width: 815px) {
-      display: grid;
-      place-content: center;
       width: 87vw;
       height: 200px;
     }
@@ -45,11 +45,11 @@
     height: 100%;
     grid-area: info;
     font-size: 12px;
+    display: grid;
+    place-content: center;
 
     @media (max-width: 815px) {
       max-width: 87vw;
-      display: grid;
-      place-content: center;
     }
   }
   &__score {

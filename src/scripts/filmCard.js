@@ -30,7 +30,7 @@ class FilmCard {
          ${this.filmName()}
        </div>
        <div class="film-card__score">
-         <span class="film-card__score-emphasis">6.8</span>/10
+        <span class="film-card__score-emphasis"><i class="fa-solid fa-star"></i>6.8</span>/10
        </div>
        <br />
        <div class="film-card__language"><span class="film-card__subtitle">Dil:
