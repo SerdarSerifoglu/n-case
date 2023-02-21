@@ -11,15 +11,30 @@
   place-content: center;
   padding: 20px 10px;
 
-  .input-search {
+  .wrapper {
     width: 70vw;
-    border: 1px solid $border-color;
-    border-radius: 8px;
-    font-size: 18px;
-    padding: 15px;
-
+    display: grid;
+    place-content: center;
+    height: 100px;
     @media (max-width: 1080px) {
       width: 90vw;
+    }
+    .search-info {
+      width: 60vw;
+      padding: 15px;
+      border-bottom: 1px solid $main-blue;
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 1080px) {
+        width: 90vw;
+      }
+
+      .result-text {
+        color: $main-blue;
+      }
+      .total-result-count {
+        color: $faint-text-color;
+      }
     }
   }
 

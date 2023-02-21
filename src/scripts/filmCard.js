@@ -1,8 +1,23 @@
+import { globalState } from "./globalState.js";
+
 class FilmCard {
   constructor(e, bc = true) {
     this.title = e.Title;
     this.imgUrl = e.Poster;
     this.bc = bc;
+    this.searchText = globalState.searchText;
+
+    console.log("searchText", this.searchText);
+  }
+
+  filmName() {
+    var regx = new RegExp(this.searchText, "gi");
+    regx.test(this.title);
+
+    return this.title.replace(
+      regx,
+      `<span style="text-decoration: underline;font-weight:bold;">${RegExp.lastMatch}</span>`
+    );
   }
 
   render() {
@@ -12,7 +27,7 @@ class FilmCard {
      </div>
      <div class="film-card__info">
        <div class="film-card__title">
-         ${this.title}
+         ${this.filmName()}
        </div>
        <div class="film-card__score">
          <span class="film-card__score-emphasis">6.8</span>/10
