@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./public/index.min.css"
+    <link href="/dist/css/index.css" rel="stylesheet" />
   </head>
   <body>
     <main class="main">
@@ -18,8 +18,9 @@
       <div class="film-list"></div>
       <div class="more-film-button">DAHA FAZLA SONUÇ</div>
     </main>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="./src/scripts/search.js" type="module"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/dist/js/search.js" type="module"></script>
+
     <script>
       $(document).ready(function () {
         $(".more-film-button").hide();

@@ -4,7 +4,7 @@ const app = express();
 app.use(express.static(__dirname + "/"));
 
 app.get("/", function (req, res) {
-  res.sendFile(__dirname + "/search.html");
+  res.sendFile(__dirname + "/dist/search.html");
 });
 const port = 3000;
 app.listen(port, () => {
