@@ -13,7 +13,6 @@ function getCards(search, limit) {
       page: 1,
     },
     success: function (data) {
-      console.log("data", data);
       responseData = data.Search;
       setGlobalState("filmList", data.Search);
       setGlobalState("totalResultCount", data.totalResults);
@@ -37,14 +36,9 @@ function getCards(search, limit) {
     if (this.value.length > 2) {
       getCards(this.value, 2);
       setGlobalState("searchText", this.value);
-      console.log("searchText", globalState.searchText);
     }
   });
   $(".more-film-button").click(function () {
-    console.log("click serdar");
-    // $(".film-card").remove();
-
-    console.log("Tıklandı");
     window.location.hash = "serdar";
     $(".main").remove();
     $("body").add("main").addClass("main");
@@ -56,8 +50,8 @@ function getCards(search, limit) {
     });
 
     $(".back-to-top").click(function () {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
     });
   });
 })();

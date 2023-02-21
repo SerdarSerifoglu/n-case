@@ -6,8 +6,6 @@ class FilmCard {
     this.imgUrl = e.Poster;
     this.bc = bc;
     this.searchText = globalState.searchText;
-
-    console.log("searchText", this.searchText);
   }
 
   filmName() {
