@@ -1,11 +1,12 @@
 class FilmCard {
-  constructor(e) {
+  constructor(e, bc = true) {
     this.title = e.Title;
     this.imgUrl = e.Poster;
+    this.bc = bc;
   }
 
   render() {
-    return `<div class="film-card">
+    return `<div class="film-card ${this.bc ? "bc" : ""}">
      <div class="film-card__image">
        <img width="100" src="${this.imgUrl}"/>
      </div>

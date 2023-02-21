@@ -2,7 +2,6 @@
   width: 90vw;
   max-width: 45%;
   height: min-content;
-  background-color: white;
   padding: 15px;
   border-radius: 8px;
   display: grid;
@@ -19,6 +18,10 @@
     grid-template-areas:
       "image"
       "info";
+  }
+
+  &.bc {
+    background-color: white;
   }
 
   &__image {
