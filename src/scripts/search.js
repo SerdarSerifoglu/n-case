@@ -54,5 +54,10 @@ function getCards(search, limit) {
       var filmCard = new FilmCard(e, false);
       $(".film-list").append(filmCard.render());
     });
+
+    $(".back-to-top").click(function () {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    });
   });
 })();
