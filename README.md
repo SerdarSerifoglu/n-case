@@ -2,9 +2,9 @@ Bilgisayarınızda Terminal açıp istediğiniz dizin altında aşağıdaki kodu
 <b> git clone https://github.com/SerdarSerifoglu/n-case.git </b>
 
 terminalden proje dizinine gidip <br/>
-npm install
+<b>npm install</b>  <br/>
 yazıp Enter tuşuna basarak gerekli paketlerin indirilmesini sağlayabilirsiniz.
 
 indirime işlemi tamamlandıktan sonra <br/>
-npm run start <br/> yazarak projeyi 
+<b>npm run start</b> <br/> yazarak projeyi 
 http://localhost:3000/ link'i üzerinden kullanabilirsiniz.
