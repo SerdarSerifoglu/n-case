@@ -1,4 +1,4 @@
-Bilgisayarınızda Terminal açıp istediğiniz dizin altında aşağıdaki kodu yazarak projeyi klonlayabilirsiniz.
+Bilgisayarınızda Terminal açıp istediğiniz dizin altında aşağıdaki kodu yazarak projeyi klonlayabilirsiniz. <br/>
 git clone https://github.com/SerdarSerifoglu/n-case.git
 
 terminalden proje dizinine gidip 
